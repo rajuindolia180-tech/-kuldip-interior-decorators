@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+content="Kuldip Interior & Decorators in Bangalore - Pooja Mandir, Modular Kitchen, TV Units, Wardrobes, Bedroom Furniture and False Ceiling.">
+
+<title>Kuldip Interior & Decorators | Bangalore</title>
+
+<style>
+
+:root{
+    --primary:#c9933b;
+    --dark:#12151b;
+    --whatsapp:#25d366;
+    --light:#f8fafc;
+    --text:#334155;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    color:var(--text);
+    background:#fff;
+    line-height:1.6;
+    padding-bottom:70px;
+}
+
+/* TOP BAR */
+
+.top-bar{
+    background:var(--dark);
+    color:#d1d5db;
+    padding:9px 16px;
+    font-size:13px;
+    text-align:center;
+}
+
+.top-bar span{
+    color:var(--primary);
+    font-weight:bold;
+}
+
+/* NAVIGATION */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:20;
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 7%;
+    box-shadow:0 4px 20px rgba(0,0,0,.07);
+}
+
+.brand-logo{
+    font-weight:800;
+    font-size:19px;
+    color:var(--dark);
+    text-decoration:none;
+}
+
+.nav-call{
+    text-decoration:none;
+    color:white;
+    background:var(--dark);
+    padding:9px 15px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+    background:linear-gradient(135deg,#12151b,#252b35);
+    color:white;
+    text-align:center;
+    padding:75px 20px;
+}
+
+.hero h1{
+    font-size:clamp(32px,6vw,58px);
+    line-height:1.1;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:760px;
+    margin:auto;
+    color:#dbe2ea;
+    font-size:17px;
+}
+
+.buttons{
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:13px 23px;
+    border-radius:9px;
+    font-weight:bold;
+    text-decoration:none;
+    transition:.2s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.btn-primary{
+    background:var(--primary);
+    color:white;
+}
+
+.btn-whatsapp{
+    background:var(--whatsapp);
+    color:white;
+}
+
+/* SECTIONS */
+
+section{
+    padding:55px 5%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.section-title h2{
+    font-size:32px;
+    color:var(--dark);
+}
+
+.section-title p{
+    color:#64748b;
+}
+
+/* SERVICES */
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+    max-width:1050px;
+    margin:auto;
+}
+
+.service{
+    background:var(--light);
+    padding:22px 16px;
+    border-radius:14px;
+    text-align:center;
+    border:1px solid #e2e8f0;
+}
+
+.service .icon{
+    font-size:30px;
+    margin-bottom:7px;
+}
+
+.service p{
+    font-size:14px;
+    color:#64748b;
+}
+
+/* FILTER BUTTONS */
+
+.filter-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+    margin:25px auto 32px;
+}
+
+.filter-btn{
+    background:white;
+    border:2px solid #e2e8f0;
+    padding:10px 18px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+    color:#334155;
+}
+
+.filter-btn.active{
+    background:var(--primary);
+    border-color:var(--primary);
+    color:white;
+}
+
+/* GALLERY */
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.gallery-card{
+    position:relative;
+    border-radius:14px;
+    overflow:hidden;
+    height:280px;
+    background:#111;
+    cursor:pointer;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.gallery-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    transition:transform .4s;
+}
+
+.gallery-card:hover img{
+    transform:scale(1.04);
+}
+
+.gallery-card.hide{
+    display:none;
+}
+
+.card-caption{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:35px 16px 14px;
+    color:white;
+    background:linear-gradient(
+        transparent,
+        rgba(0,0,0,.85)
+    );
+}
+
+.card-caption strong,
+.card-caption span{
+    display:block;
+}
+
+.card-caption span{
+    font-size:13px;
+    color:#e2e8f0;
+}
+
+/* ABOUT */
+
+.about{
+    background:var(--light);
+    text-align:center;
+}
+
+.about-box{
+    max-width:800px;
+    margin:auto;
+}
+
+/* CONTACT */
+
+.contact{
+    text-align:center;
+}
+
+.contact-box{
+    max-width:650px;
+    margin:auto;
+    background:white;
+    border:1px solid #e2e8f0;
+    border-radius:16px;
+    padding:30px;
+    box-shadow:0 10px 35px rgba(0,0,0,.06);
+}
+
+.contact-box p{
+    margin:7px 0;
+    color:#64748b;
+}
+
+.contact-box a{
+    color:var(--dark);
+    font-weight:bold;
+}
+
+/* BOTTOM BUTTONS */
+
+.bottom-actions{
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:30;
+    display:flex;
+    background:white;
+    box-shadow:0 -4px 18px rgba(0,0,0,.12);
+}
+
+.bottom-actions a{
+    flex:1;
+    text-align:center;
+    text-decoration:none;
+    padding:14px;
+    font-weight:800;
+}
+
+.call-bottom{
+    color:white;
+    background:var(--dark);
+}
+
+.wa-bottom{
+    color:white;
+    background:var(--whatsapp);
+}
+
+/* LIGHTBOX */
+
+.lightbox{
+    display:none;
+    position:fixed;
+    inset:0;
+    z-index:50;
+    background:rgba(0,0,0,.92);
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.lightbox.show{
+    display:flex;
+}
+
+.lightbox img{
+    max-width:95vw;
+    max-height:88vh;
+    border-radius:10px;
+}
+
+.close{
+    position:absolute;
+    top:14px;
+    right:20px;
+    color:white;
+    font-size:40px;
+    cursor:pointer;
+}
+
+/* MOBILE */
+
+@media(max-width:650px){
+
+    nav{
+        padding:13px 4%;
+    }
+
+    .brand-logo{
+        font-size:15px;
+        max-width:70%;
+    }
+
+    .nav-call{
+        font-size:13px;
+        padding:8px 11px;
+    }
+
+    .hero{
+        padding:55px 18px 60px;
+    }
+
+    section{
+        padding:45px 4%;
+    }
+
+    .gallery-card{
+        height:245px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="top-bar">
+📍 <span>Karni Dham Shatika • Bangalore</span>
+|
+Interior Design & Carpentry Work
+</div>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<a href="#" class="brand-logo">
+KULDIP INTERIOR & DECORATORS
+</a>
+
+<a href="tel:7483392041" class="nav-call">
+📞 Call
+</a>
+
+</nav>
+
+
+<!-- HERO -->
+
+<header class="hero">
+
+<h1>
+Kuldip Interior & Decorators
+</h1>
+
+<p>
+Beautiful, practical interiors crafted for your home —
+Pooja Mandir, Modular Kitchen, TV Units, Wardrobes,
+Bedrooms & False Ceiling in Bangalore.
+</p>
+
+<div class="buttons">
+
+<a
+href="tel:7483392041"
+class="btn btn-primary">
+📞 Call 7483392041
+</a>
+
+<a
+href="https://wa.me/917483392041?text=Hello%20Kuldip%20Interior%20%26%20Decorators,%20I%20want%20an%20interior%20work%20quotation."
+class="btn btn-whatsapp">
+💬 WhatsApp
+</a>
+
+</div>
+
+</header>
+
+
+<!-- SERVICES -->
+
+<section>
+
+<div class="section-title">
+
+<h2>
+Our Services
+</h2>
+
+<p>
+Custom work for every room in your home
+</p>
+
+</div>
+
+
+<div class="services">
+
+<div class="service">
+<div class="icon">🛕</div>
+<strong>Mandir / Temple</strong>
+<p>Custom Pooja Mandir</p>
+</div>
+
+
+<div class="service">
+<div class="icon">🍳</div>
+<strong>Modular Kitchen</strong>
+<p>Modern cabinets & storage</p>
+</div>
+
+
+<div class="service">
+<div class="icon">📺</div>
+<strong>TV Units</strong>
+<p>Designer TV wall units</p>
+</div>
+
+
+<div class="service">
+<div class="icon">🛏️</div>
+<strong>Bedroom</strong>
+<p>Beds, wardrobes & side tables</p>
+</div>
+
+
+<div class="service">
+<div class="icon">📚</div>
+<strong>Study / Office</strong>
+<p>Custom study furniture</p>
+</div>
+
+
+<div class="service">
+<div class="icon">💡</div>
+<strong>False Ceiling</strong>
+<p>Lighting & ceiling designs</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+<div class="section-title">
+
+<h2>
+Our Work
+</h2>
+
+<p>
+Real projects completed by Kuldip Interior & Decorators
+</p>
+
+</div>
+
+
+<div class="filter-container">
+
+<button
+class="filter-btn active"
+onclick="filterGallery('all',event)">
+All Photos
+</button>
+
+<button
+class="filter-btn"
+onclick="filterGallery('mandir',event)">
+Mandir / Temple
+</button>
+
+<button
+class="filter-btn"
+onclick="filterGallery('kitchen',event)">
+Modular Kitchen
+</button>
+
+<button
+class="filter-btn"
+onclick="filterGallery('hall',event)">
+Hall / TV Unit
+</button>
+
+<button
+class="filter-btn"
+onclick="filterGallery('bedroom',event)">
+Bedroom & Study
+</button>
+
+</div>
+
+
+<div class="gallery-grid">
+
+
+<!-- TV UNIT -->
+
+<article
+class="gallery-card"
+data-category="hall"
+onclick="openLightbox('images/tv-unit-1.jpeg','Modern TV Unit')">
+
+<img
+src="images/tv-unit-1.jpeg"
+alt="Modern TV Unit"
+loading="lazy">
+
+<div class="card-caption">
+<strong>Modern TV Unit</strong>
+<span>TV Unit & False Ceiling</span>
+</div>
+
+</article>
+
+
+<!-- BEDROOM -->
+
+<article
+class="gallery-card"
+data-category="bedroom"
+onclick="openLightbox('images/bedroom-1.jpeg','Premium Bedroom')">
+
+<img
+src="images/bedroom-1.jpeg"
+alt="Premium Bedroom"
+loading="lazy">
+
+<div class="card-caption">
+<strong>Premium Bedroom</strong>
+<span>Wardrobe, Bed & Wall Design</span>
+</div>
+
+</article>
+
+
+<!-- MANDIR -->
+
+<article
+class="gallery-card"
+data-category="mandir"
+onclick="openLightbox('images/mandir-1.jpeg','Designer Mandir')">
+
+<img
+src="images/mandir-1.jpeg"
+alt="Designer Mandir"
+loading="lazy">
+
+<div class="card-caption">
+<strong>Designer Mandir</strong>
+<span>Pooja Mandir & Storage</span>
+</div>
+
+</article>
+
+
+<!-- MANDIR 2 -->
+
+<article
+class="gallery-card"
+data-category="mandir"
+onclick="openLightbox('images/mandir-2.jpeg','Pooja Mandir')">
+
+<img
+src="images/mandir-2.jpeg"
+alt="Pooja Mandir"
+loading="lazy">
+
+<div class="card-caption">
+<strong>Pooja Mandir</strong>
+<span>Marble Finish Mandir</span>
+</div>
+
+</article>
+
+
+<!-- TV UNIT 2 -->
+
+<article
+class="gallery-card"
+data-category="hall"
+onclick="openLightbox('images/tv-unit-2.jpeg','TV Wall Design')">
+
+<img
+src="images/tv-unit-2.jpeg"
+alt="TV Wall Design"
+loading="lazy">
+
+<div class="card-caption">
+<strong>TV Wall Design</strong>
+<span>Wooden Fluted TV Unit</span>
+</div>
+
+</article>
+
+
+<!-- BEDROOM 2 -->
+
+<article
+class="gallery-card"
+data-category="bedroom"
+onclick="openLightbox('images/bedroom-2.jpeg','Bedroom Interior')">
+
+<img
+src="images/bedroom-2.jpeg"
+alt="Bedroom Interior"
+loading="lazy">
+
+<div class="card-caption">
+<strong>Bedroom Interior</strong>
+<span>Custom Bed & Storage</span>
+</div>
+
+</article>
+
+
+<!-- BEDROOM 3 -->
+
+<article
+class="gallery-card"
+data-category="bedroom"
+onclick="openLightbox('images/bedroom-3.jpeg','Modern Bed Design')">
+
+<img
+src="images/bedroom-3.jpeg"
+alt="Modern Bed Design"
+loading="lazy">
+
+<div class="card-caption">
+<strong>Modern Bed Design</strong>
+<span>Custom Furniture</span>
+</div>
+
+</article>
+
+
+<!-- BEDROOM 4 -->
+
+<article
+class="gallery-card"
+data-category="bedroom"
+onclick="openLightbox('images/bedroom-4.jpeg','Wooden Bedroom')">
+
+<img
+src="images/bedroom-4.jpeg"
+alt="Wooden Bedroom"
+loading="lazy">
+
+<div class="card-caption">
+<strong>Wooden Bedroom</strong>
+<span>Bed & Side Tables</span>
+</div>
+
+</article>
+
+
+<!-- KITCHEN -->
+
+<article
+class="gallery-card"
+data-category="kitchen"
+onclick="openLightbox('images/modular-kitchen-1.jpeg','Blue Modular Kitchen')">
+
+<img
+src="images/modular-kitchen-1.jpeg"
+alt="Blue Modular Kitchen"
+loading="lazy">
+
+<div class="card-caption">
+<strong>Blue Modular Kitchen</strong>
+<span>Modular Kitchen & Cabinets</span>
+</div>
+
+</article>
+
+
+<!-- KITCHEN 2 -->
+
+<article
+class="gallery-card"
+data-category="kitchen"
+onclick="openLightbox('images/modular-kitchen-2.jpeg','Kitchen Interior')">
+
+<img
+src="images/modular-kitchen-2.jpeg"
+alt="Kitchen Interior"
+loading="lazy">
+
+<div class="card-caption">
+<strong>Kitchen Interior</strong>
+<span>L-Shaped Modular Kitchen</span>
+</div>
+
+</article>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about">
+
+<div class="about-box">
+
+<div class="section-title">
+<h2>Why Choose Us?</h2>
+</div>
+
+<p>
+We focus on clean finishing, practical storage and designs
+made to match your home. From a compact modular kitchen
+to a complete bedroom, TV unit or pooja mandir, we build
+custom interiors with attention to detail.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<div class="section-title">
+
+<h2>
+Contact Us
+</h2>
+
+<p>
+Get in touch for your interior work
+</p>
+
+</div>
+
+
+<div class="contact-box">
+
+<p>
+📍 Bangalore, Karnataka
+</p>
+
+<p>
+📞
+<a href="tel:7483392041">
+7483392041
+</a>
+</p>
+
+<p>
+👨‍🔧 Kuldip & Sandip
+</p>
+
+
+<div class="buttons">
+
+<a
+href="tel:7483392041"
+class="btn btn-primary">
+Call Now
+</a>
+
+<a
+href="https://wa.me/917483392041"
+class="btn btn-whatsapp">
+WhatsApp Us
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- MOBILE BOTTOM BUTTONS -->
+
+<div class="bottom-actions">
+
+<a
+class="call-bottom"
+href="tel:7483392041">
+📞 Call
+</a>
+
+<a
+class="wa-bottom"
+href="https://wa.me/917483392041">
+💬 WhatsApp
+</a>
+
+</div>
+
+
+<!-- IMAGE LIGHTBOX -->
+
+<div
+class="lightbox"
+id="lightbox"
+onclick="closeLightbox()">
+
+<span class="close">
+×
+</span>
+
+<img
+id="lightboxImg"
+src=""
+alt="">
+
+</div>
+
+
+<script>
+
+/* GALLERY FILTER */
+
+function filterGallery(category,event){
+
+    document
+    .querySelectorAll('.filter-btn')
+    .forEach(button=>{
+        button.classList.remove('active');
+    });
+
+    if(event){
+        event.currentTarget.classList.add('active');
+    }
+
+    document
+    .querySelectorAll('.gallery-card')
+    .forEach(card=>{
+
+        if(
+            category === 'all' ||
+            card.dataset.category === category
+        ){
+
+            card.classList.remove('hide');
+
+        }else{
+
+            card.classList.add('hide');
+
+        }
+
+    });
+
+}
+
+
+/* IMAGE POPUP */
+
+function openLightbox(src,title){
+
+    const box =
+        document.getElementById('lightbox');
+
+    const image =
+        document.getElementById('lightboxImg');
+
+    image.src = src;
+
+    image.alt = title;
+
+    box.classList.add('show');
+
+}
+
+
+/* CLOSE IMAGE */
+
+function closeLightbox(){
+
+    document
+    .getElementById('lightbox')
+    .classList.remove('show');
+
+}
+
+
+/* ESC KEY */
+
+document.addEventListener(
+    'keydown',
+    function(event){
+
+        if(event.key === 'Escape'){
+            closeLightbox();
+        }
+
+    }
+);
+
+</script>
+
+</body>
+</html>
