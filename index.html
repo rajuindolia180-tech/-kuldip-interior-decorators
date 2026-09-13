@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuldip Interior & Decorators | Bangalore | Mandir, Hall, Kitchen & Bedroom</title>
+    <meta name="description" content="Kuldip & Sandip - Complete Interior Design & Carpentry in Bangalore. Modular Kitchen, Hall TV Units, Sliding Wardrobes, Pooja Mandir & Ceilings. Call 7483392041 / 9901622892.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #c9933b;
+            --primary-dark: #a87625;
+            --dark: #12151b;
+            --light-bg: #f8fafc;
+            --text-main: #334155;
+            --text-muted: #64748b;
+            --white: #ffffff;
+            --whatsapp: #25d366;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            color: var(--text-main);
+            background-color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .top-bar {
+            background-color: var(--dark);
+            color: #d1d5db;
+            padding: 9px 16px;
+            font-size: 13px;
+            text-align: center;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .top-bar span {
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 8%;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            z-index: 1000;
+        }
+
+        .brand-logo {
+            font-weight: 800;
+            font-size: 20px;
+            color: var(--dark);
+            text-decoration: none;
+            line-height: 1.2;
+        }
+
+        .brand-logo span {
+            color: var(--primary);
+        }
+
+        .brand-subtitle {
+            font-size: 11px;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            display: block;
+            font-weight: 600;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .btn-call-nav {
+            background: var(--dark);
+            color: white !important;
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-size: 14px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, rgba(18, 21, 27, 0.93), rgba(28, 33, 43, 0.88));
+            color: white;
+            text-align: center;
+            padding: 95px 20px 115px;
+        }
+
+        .hero-tag {
+            display: inline-block;
+            background: rgba(201, 147, 59, 0.25);
+            color: var(--primary);
+            border: 1px solid var(--primary);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 {
+            font-size: 44px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+
+        .hero h1 span {
+            color: var(--primary);
+        }
+
+        .owners-tag {
+            display: inline-block;
+            color: #d1d5db;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            background: rgba(255,255,255,0.08);
+            padding: 6px 18px;
+            border-radius: 20px;
+        }
+
+        .hero p {
+            max-width: 680px;
+            margin: 0 auto 35px;
+            font-size: 17px;
+            color: #d1d5db;
+        }
+
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-whatsapp {
+            background-color: var(--whatsapp);
+            color: white;
+            border: none;
+        }
+
+        .btn-whatsapp:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        .container {
+            width: 88%;
+            max-width: 1250px;
+            margin: 0 auto;
+            padding: 70px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-subtitle {
+            color: var(--primary);
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .section-title {
+            font-size: 34px;
+            color: var(--dark);
+            font-weight: 800;
+        }
+
+        /* Filter Buttons */
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+
+        .filter-btn {
+            background: #ffffff;
+            color: var(--dark);
+            border: 2px solid #e2e8f0;
+            padding: 11px 22px;
+            border-radius: 30px;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .filter-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+            box-shadow: 0 4px 14px rgba(201, 147, 59, 0.35);
+        }
+
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .gallery-card {
+            position: relative;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            background: #000;
+            aspect-ratio: 4 / 3;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .gallery-card.hide {
+            display: none;
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+            display: block;
+        }
+
+        .gallery-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 18px;
+            background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+            color: white;
+            font-size: 14px;
+            font-weight: 700;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .gallery-category-pill {
+            font-size: 11px;
+            background: var(--primary);
+            color: white;
+            padding: 4px 9px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 28px;
+        }
+
+        .service-card {
+            background: white;
+            border: 1px solid #edf2f7;
+            padding: 35px 28px;
+            border-radius: 14px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--primary);
+            box-shadow: 0 15px 35px rgba(201, 147, 59, 0.12);
+        }
+
+        .service-icon {
+            font-size: 40px;
+            margin-bottom: 16px;
+            display: inline-block;
+        }
+
+        .service-card h3 {
+            font-size: 20px;
+            color: var(--dark);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .service-card p {
+            color: var(--text-muted);
+            font-size: 15px;
+        }
+
+        .about-section {
+            background-color: var(--light-bg);
+            padding: 70px 0;
+        }
+
+        .about-box {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            border-left: 6px solid var(--primary);
+            max-width: 900px;
+            margin: 0 auto;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+        }
+
+        .about-box h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .about-box p {
+            font-size: 16px;
+            color: var(--text-main);
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+
+        .contact-wrap {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            background: var(--dark);
+            color: white;
+            padding: 50px;
+            border-radius: 20px;
+        }
+
+        .contact-info h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+
+        .contact-item {
+            margin-bottom: 20px;
+        }
+
+        .contact-item strong {
+            display: block;
+            color: var(--primary);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .contact-item a, .contact-item p {
+            color: #d1d5db;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .contact-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .mobile-bar {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            z-index: 9999;
+            padding: 10px 15px;
+        }
+
+        .mobile-bar-inner {
+            display: flex;
+            gap: 10px;
+        }
+
+        .mobile-bar-inner .btn {
+            flex: 1;
+            padding: 12px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 32px; }
+            .contact-wrap { padding: 25px; }
+            .mobile-bar { display: block; }
+            body { padding-bottom: 60px; }
+            .filter-btn { padding: 8px 16px; font-size: 13px; }
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #0b0d11;
+            color: #64748b;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        📍 <span>Karni Dham Shatika • Bangalore</span> | Interior Design & Carpentry Work
+    </div>
+
+    <nav>
+        <a href="#" class="brand-logo">
+            KULDIP <span>INTERIOR</span> & DECORATORS
+            <span class="brand-subtitle">Kuldip & Sandip</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#projects">Work Photos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="tel:7483392041" class="btn-call-nav">📞 Call Now</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-tag">✨ Beautiful Spaces. Made for You.</div>
+        <h1>Kuldip Interior & Decorators</h1>
+        <div class="owners-tag">👤 KULDIP & SANDIP</div>
+        <p>Complete Interior Solutions: Modular Kitchens, Designer Hall TV Units, Sliding Wardrobes, Study Desks, Pooja Mandir & Ceilings across Bangalore.</p>
+        <div class="hero-btns">
+            <a href="tel:7483392041" class="btn btn-primary">📞 Call Kuldip (7483392041)</a>
+            <a href="https://wa.me/917483392041?text=Hi%20Kuldip%20%26%20Sandip%2C%20I%20saw%20your%20completed%20work%20photos%20and%20want%20a%20quote%20for%20Interior%20work." class="btn btn-whatsapp">💬 WhatsApp Us</a>
+        </div>
+    </header>
+
+    <!-- PHOTO GALLERY SECTION -->
+    <section id="projects" class="container">
+        <div class="section-header">
+            <span class="section-subtitle">Our Actual Completed Work</span>
+            <h2 class="section-title">Actual Project Gallery</h2>
+            <p style="color: var(--text-muted); margin-top: 8px;">बटन पर क्लिक करें और अपनी पसंद का काम देखें:</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-container">
+            <button class="filter-btn active" onclick="filterGallery('all', event)">🌟 All Photos (सभी फोटो)</button>
+            <button class="filter-btn" onclick="filterGallery('mandir', event)">🛕 Mandir / Temple (मंदिर)</button>
+            <button class="filter-btn" onclick="filterGallery('kitchen', event)">🍳 Kitchen (किचन)</button>
+            <button class="filter-btn" onclick="filterGallery('hall', event)">🛋️ Hall / TV Unit (हॉल)</button>
+            <button class="filter-btn" onclick="filterGallery('bedroom', event)">🛏️ Bedroom & Study (बेडरूम / स्टडी)</button>
+        </div>
+
+        <!-- Photo Grid with EMBEDDED Base64 Photos -->
+        <div class="gallery-grid" id="galleryGrid">
+            
+        <div class="gallery-card" data-category="mandir">
+            <img src="" alt="Floral Jali & Lotus Pooja Mandir Unit Bangalore Kuldip Interior" loading="lazy">
+            <div class="gallery-overlay">
+                <span>Floral Jali & Lotus Pooja Mandir Unit</span>
+                <span class="gallery-category-pill">Mandir</span>
+            </div>
+        </div>
+    
+        <div class="gallery-card" data-category="mandir">
+            <img src="" alt="Shree Ganesha Laser-Cut Mandir Bangalore Kuldip Interior" loading="lazy">
+            <div class="gallery-overlay">
+                <span>Shree Ganesha Laser-Cut Mandir</span>
+                <span class="gallery-category-pill">Mandir</span>
+            </div>
+        </div>
+    
+        <div class="gallery-card" data-category="mandir">
+            <img src="" alt="Om & Swastik Mandir + Crockery Showcase Bangalore Kuldip Interior" loading="lazy">
+            <div class="gallery-overlay">
+                <span>Om & Swastik Mandir + Crockery Showcase</span>
+                <span class="gallery-category-pill">Mandir</span>
+            </div>
+        </div>
+    
+        <div class="gallery-card" data-category="mandir">
+            <img src="" alt="Luxury Marble Finish Pooja Temple Bangalore Kuldip Interior" loading="lazy">
+            <div class="gallery-overlay">
+                <span>Luxury Marble Finish Pooja Temple</span>
+                <span class="gallery-category-pill">Mandir</span>
+            </div>
+        </div>
+    
+        <div class="gallery-card" data-category="kitchen">
+            <img src="" alt="Royal Blue High-Gloss Modular Kitchen Bangalore Kuldip Interior" loading="lazy">
+            <div class="gallery-overlay">
+                <span>Royal Blue High-Gloss Modular Kitchen</span>
+                <span class="gallery-category-pill">Kitchen</span>
+            </div>
+        </div>
+    
+        <div class="gallery-card" data-category="kitchen">
+            <img src="" alt="Ocean Blue & White Kitchen with Marble Wall Bangalore Kuldip Interior" loading="lazy">
+            <div class="gallery-overlay">
+                <span>Ocean Blue & White Kitchen with Marble Wall</span>
+                <span class="gallery-category-pill">Kitchen</span>
+            </div>
+        </div>
+    
+        <div class="gallery-card" data-category="kitchen">
+            <img src="" alt="L-Shaped Kitchen with Profile Lighting & Chimney Bangalore Kuldip Interior" loading="lazy">
+            <div class="gallery-overlay">
+                <span>L-Shaped Kitchen with Profile Lighting & Chimney</span>
+                <span class="gallery-category-pill">Kitchen</span>
+            </div>
+        </div>
+    
+        <div class="gallery-card" data-category="kitchen">
+            <img src="" alt="Modern Dual-Tone Kitchen with Loft Storage Bangalore Kuldip Interior" loading="lazy">
+            <div class="gallery-overlay">
+                <span>Modern Dual-Tone Kitchen with Loft Storage</span>
+                <span class="gallery-category-pill">Kitchen</span>
+            </div>
+        </div>
+    
+        <div class="gallery-card" data-category="kitchen">
+            <img src="" alt="Dining & Kitchen Crockery Storage Cabinet Bangalore Kuldip Interior" loading="lazy">
+            <div class="gallery-overlay">
+                <span>Dining & Kitchen Crockery Storage Cabinet</span>
+                <span class="gallery-category-pill">Kitchen</span>
+            </div>
+        </div>
+    
+        <div class="gallery-card" data-category="hall">
+            <img src="" alt="Marble Sheet TV Paneling & Gold Fluted Slats Bangalore Kuldip Interior" loading="lazy">
+            <div class="gallery-overlay">
+                <span>Marble Sheet TV Paneling & Gold Fluted Slats</span>
+                <span class="gallery-category-pill">Hall</span>
+            </div>
+        </div>
+    
+        <div class="gallery-card" data-category="hall">
+            <img src="" alt="TV Wall with Fluted Wooden Rafters & Hanging Lights Bangalore Kuldip Interior" loading="lazy">
+            <div class="gallery-overlay">
+                <span>TV Wall with Fluted Wooden Rafters & Hanging Lights</span>
+                <span class="gallery-category-pill">Hall</span>
+            </div>
+        </div>
+    
+        <div class="gallery-card" data-category="hall">
+            <img src="" alt="Marble Sheet TV Wall Paneling & Display Shelves Bangalore Kuldip Interior" loading="lazy">
+            <div class="gallery-overlay">
+                <span>Marble Sheet TV Wall Paneling & Display Shelves</span>
+                <span class="gallery-category-pill">Hall</span>
+            </div>
+        </div>
+    
+        <div class="gallery-card" data-category="hall">
+            <img src="" alt="Hall TV Unit, CNC Jali & Designer False Ceiling Bangalore Kuldip Interior" loading="lazy">
+            <div class="gallery-overlay">
+                <span>Hall TV Unit, CNC Jali & Designer False Ceiling</span>
+                <span class="gallery-category-pill">Hall</span>
+            </div>
+        </div>
+    
+        <div class="gallery-card" data-category="bedroom">
+            <img src="" alt="Study Table Unit + Glass LED Showcase Shelf Bangalore Kuldip Interior" loading="lazy">
+            <div class="gallery-overlay">
+                <span>Study Table Unit + Glass LED Showcase Shelf</span>
+                <span class="gallery-category-pill">Bedroom</span>
+            </div>
+        </div>
+    
+        <div class="gallery-card" data-category="bedroom">
+            <img src="" alt="Wave-Curve Dual Tone Sliding Wardrobe Bangalore Kuldip Interior" loading="lazy">
+            <div class="gallery-overlay">
+                <span>Wave-Curve Dual Tone Sliding Wardrobe</span>
+                <span class="gallery-category-pill">Bedroom</span>
+            </div>
+        </div>
+    
+        <div class="gallery-card" data-category="bedroom">
+            <img src="" alt="Corner Wardrobe Suite with Bed & Backlight Mirror Bangalore Kuldip Interior" loading="lazy">
+            <div class="gallery-overlay">
+                <span>Corner Wardrobe Suite with Bed & Backlight Mirror</span>
+                <span class="gallery-category-pill">Bedroom</span>
+            </div>
+        </div>
+    
+        <div class="gallery-card" data-category="bedroom">
+            <img src="" alt="Window Bay Seating with Surrounding Wardrobes Bangalore Kuldip Interior" loading="lazy">
+            <div class="gallery-overlay">
+                <span>Window Bay Seating with Surrounding Wardrobes</span>
+                <span class="gallery-category-pill">Bedroom</span>
+            </div>
+        </div>
+    
+        <div class="gallery-card" data-category="bedroom">
+            <img src="" alt="Sliding Wardrobe with Gold Inlay Grooves Bangalore Kuldip Interior" loading="lazy">
+            <div class="gallery-overlay">
+                <span>Sliding Wardrobe with Gold Inlay Grooves</span>
+                <span class="gallery-category-pill">Bedroom</span>
+            </div>
+        </div>
+    
+        <div class="gallery-card" data-category="bedroom">
+            <img src="" alt="Full Wall Wardrobe + Dressing Unit + Study Table Bangalore Kuldip Interior" loading="lazy">
+            <div class="gallery-overlay">
+                <span>Full Wall Wardrobe + Dressing Unit + Study Table</span>
+                <span class="gallery-category-pill">Bedroom</span>
+            </div>
+        </div>
+    
+        <div class="gallery-card" data-category="bedroom">
+            <img src="" alt="Sliding Wardrobe with Profile Light False Ceiling Bangalore Kuldip Interior" loading="lazy">
+            <div class="gallery-overlay">
+                <span>Sliding Wardrobe with Profile Light False Ceiling</span>
+                <span class="gallery-category-pill">Bedroom</span>
+            </div>
+        </div>
+    
+        <div class="gallery-card" data-category="bedroom">
+            <img src="" alt="Modern Arched Dual-Tone Wardrobe & Lofts Bangalore Kuldip Interior" loading="lazy">
+            <div class="gallery-overlay">
+                <span>Modern Arched Dual-Tone Wardrobe & Lofts</span>
+                <span class="gallery-category-pill">Bedroom</span>
+            </div>
+        </div>
+    
+        <div class="gallery-card" data-category="bedroom">
+            <img src="" alt="Designer Bed Headboard Paneling & Ceiling Rafters Bangalore Kuldip Interior" loading="lazy">
+            <div class="gallery-overlay">
+                <span>Designer Bed Headboard Paneling & Ceiling Rafters</span>
+                <span class="gallery-category-pill">Bedroom</span>
+            </div>
+        </div>
+    
+        <div class="gallery-card" data-category="bedroom">
+            <img src="" alt="Complete Bedroom Setup: Bed, Wardrobe & Ceiling Bangalore Kuldip Interior" loading="lazy">
+            <div class="gallery-overlay">
+                <span>Complete Bedroom Setup: Bed, Wardrobe & Ceiling</span>
+                <span class="gallery-category-pill">Bedroom</span>
+            </div>
+        </div>
+    
+        <div class="gallery-card" data-category="bedroom">
+            <img src="" alt="Bed & Dual-Tone Acrylic Sliding Wardrobe Bangalore Kuldip Interior" loading="lazy">
+            <div class="gallery-overlay">
+                <span>Bed & Dual-Tone Acrylic Sliding Wardrobe</span>
+                <span class="gallery-category-pill">Bedroom</span>
+            </div>
+        </div>
+    
+        <div class="gallery-card" data-category="bedroom">
+            <img src="" alt="Glossy Sliding Wardrobe with Top Loft Bangalore Kuldip Interior" loading="lazy">
+            <div class="gallery-overlay">
+                <span>Glossy Sliding Wardrobe with Top Loft</span>
+                <span class="gallery-category-pill">Bedroom</span>
+            </div>
+        </div>
+    
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container">
+        <div class="section-header">
+            <span class="section-subtitle">What We Specialize In</span>
+            <h2 class="section-title">Our Interior Services</h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <span class="service-icon">🍳</span>
+                <h3>Modular Kitchen</h3>
+                <p>L-shaped & U-shaped layouts, acrylic & laminate cabinets, soft-close hardware and pantry units.</p>
+            </div>
+            <div class="service-card">
+                <span class="service-icon">🛋️</span>
+                <h3>Hall TV Units & Paneling</h3>
+                <p>Fluted wooden louvers, marble sheet wall paneling, floating drawers and decorative lighting.</p>
+            </div>
+            <div class="service-card">
+                <span class="service-icon">🛏️</span>
+                <h3>Bedroom, Wardrobes & Study</h3>
+                <p>Gold inlay grooved wardrobes, window bay seating, full-height lofts, and designer study desks.</p>
+            </div>
+            <div class="service-card">
+                <span class="service-icon">🛕</span>
+                <h3>Pooja Mandir / Temple Units</h3>
+                <p>Laser cut Om/Ganesh engravings, brass bells, LED backlights and marble finish pooja ghar.</p>
+            </div>
+            <div class="service-card">
+                <span class="service-icon">💡</span>
+                <h3>False Ceiling & Profile Lights</h3>
+                <p>Modern geometric profile lighting, cove light ceilings, and wooden ceiling rafters.</p>
+            </div>
+            <div class="service-card">
+                <span class="service-icon">🎨</span>
+                <h3>Painting & Finishing Work</h3>
+                <p>Royal luxury emulsion painting, smooth wall putty, texture finish and precision carpentry.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="container" style="padding: 0;">
+            <div class="about-box">
+                <span class="section-subtitle">About Us</span>
+                <h2>Kuldip Interior & Decorators</h2>
+                <p>Led by <strong>Kuldip & Sandip</strong>, we provide end-to-end interior designing, modular furniture, and custom woodwork across Bangalore. All photos displayed on this website are 100% actual completed projects executed by our team.</p>
+                <p>We believe in high-grade plywood, durable hardware, neat and clean finishing, on-time handover, and budget-friendly pricing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <div class="contact-wrap">
+            <div class="contact-info">
+                <span class="section-subtitle" style="color: var(--primary);">Get In Touch</span>
+                <h3>Let's Discuss Your Project</h3>
+                <div class="contact-item">
+                    <strong>Contact Persons</strong>
+                    <p style="font-size: 18px; font-weight: 700; color: #fff;">Kuldip & Sandip</p>
+                </div>
+                <div class="contact-item">
+                    <strong>Address</strong>
+                    <p>📍 Choodasandra Circle, Near GR Apartment,<br>Amrutha College Road, Bangalore – 560035</p>
+                </div>
+                <div class="contact-item">
+                    <strong>Call Directly</strong>
+                    <p>📞 <a href="tel:7483392041">7483392041</a> (Kuldip)<br>📞 <a href="tel:9901622892">9901622892</a> (Sandip)</p>
+                </div>
+                <div class="contact-item">
+                    <a href="https://maps.google.com/?q=Choodasandra+Circle+Bangalore" target="_blank" style="color: var(--primary); font-weight: 600;">
+                        Open Location in Google Maps →
+                    </a>
+                </div>
+            </div>
+            <div class="contact-actions">
+                <a href="https://wa.me/917483392041?text=Hi%20Kuldip%20%26%20Sandip%2C%20I%20saw%20your%20actual%20work%20photos%20and%20want%20a%20quote%20for%20Interior%20work." class="btn btn-whatsapp" style="padding: 18px;">
+                    💬 Get Quote on WhatsApp
+                </a>
+                <a href="tel:7483392041" class="btn btn-primary" style="padding: 18px;">
+                    📞 Call 7483392041
+                </a>
+                <a href="tel:9901622892" class="btn btn-primary" style="padding: 18px; background-color: #2b3342;">
+                    📞 Call 9901622892
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="mobile-bar">
+        <div class="mobile-bar-inner">
+            <a href="tel:7483392041" class="btn btn-primary">📞 Call</a>
+            <a href="https://wa.me/917483392041?text=Hello%20Kuldip%20%26%20Sandip%2C%20I%20need%20an%20interior%20quote." class="btn btn-whatsapp">💬 WhatsApp</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Kuldip Interior & Decorators • Bangalore. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function filterGallery(category, evt) {
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            if(evt && evt.currentTarget) {
+                evt.currentTarget.classList.add('active');
+            }
+
+            const cards = document.querySelectorAll('.gallery-card');
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.classList.remove('hide');
+                } else {
+                    card.classList.add('hide');
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
